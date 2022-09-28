@@ -3,8 +3,8 @@
 from starkware.cairo.common.cairo_builtins import HashBuiltin
 from src.starknet import store_name, get_name
 
-const CALLER = 3324929;
-const NAME = 0x00A596deDe49d268d6aD089B56CC76598af3E949183a8ed10aBdE924de191e48;
+const CALLER = 0x00A596deDe49d268d6aD089B56CC76598af3E949183a8ed10aBdE924de191e48;
+const NAME = 322918500091226412576622;
 
 // deploy contract and save address to context
 @external
@@ -49,6 +49,6 @@ func test_get_name{syscall_ptr: felt*, pedersen_ptr: HashBuiltin*, range_check_p
 
     // stop prank
     %{ stop_prank() %}
-    
+
     return ();
 }
